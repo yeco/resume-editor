@@ -1,6 +1,6 @@
 # Resume Editor
 
-The live editor available at http://registry.jsonresume.org/
+The live editor available at http://resumes.edify.cr/
 
 ## Development
 
