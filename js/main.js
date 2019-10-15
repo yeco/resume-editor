@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
             data: JSON.stringify({
                 resume: data
             }, null, "  "),
-            url: "http://themes.jsonresume.org/" + theme,
+            url: "https://themes-manager.herokuapp.com/" + theme,
             success: function(html) {
                 iframe.contents().find("body").html(html);
                 preview.removeClass("loading");
@@ -84,7 +84,7 @@ jQuery(document).ready(function($) {
     (function getThemes() {
         var list = $("#themes-list");
         var item = list.find(".item").remove();
-        $.getJSON("http://themes.jsonresume.org/themes.json", function(json) {
+        $.getJSON("https://themes-manager.herokuapp.com/themes.json", function(json) {
             var themes = json.themes;
             if (!themes) {
                 return;
